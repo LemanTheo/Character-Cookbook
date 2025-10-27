@@ -1,0 +1,68 @@
+[
+{
+  "directory": "C:/Users/thlem/Documents/GitHub/Character-Cookbook/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe -DGLFW_DLL @CMakeFiles/DnDBuilder.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\DnDBuilder.dir\\src\\campaign_manager.cpp.obj -c C:\\Users\\thlem\\Documents\\GitHub\\Character-Cookbook\\src\\campaign_manager.cpp",
+  "file": "C:/Users/thlem/Documents/GitHub/Character-Cookbook/src/campaign_manager.cpp",
+  "output": "CMakeFiles/DnDBuilder.dir/src/campaign_manager.cpp.obj"
+},
+{
+  "directory": "C:/Users/thlem/Documents/GitHub/Character-Cookbook/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe -DGLFW_DLL @CMakeFiles/DnDBuilder.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\DnDBuilder.dir\\src\\character.cpp.obj -c C:\\Users\\thlem\\Documents\\GitHub\\Character-Cookbook\\src\\character.cpp",
+  "file": "C:/Users/thlem/Documents/GitHub/Character-Cookbook/src/character.cpp",
+  "output": "CMakeFiles/DnDBuilder.dir/src/character.cpp.obj"
+},
+{
+  "directory": "C:/Users/thlem/Documents/GitHub/Character-Cookbook/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe -DGLFW_DLL @CMakeFiles/DnDBuilder.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\DnDBuilder.dir\\src\\gui.cpp.obj -c C:\\Users\\thlem\\Documents\\GitHub\\Character-Cookbook\\src\\gui.cpp",
+  "file": "C:/Users/thlem/Documents/GitHub/Character-Cookbook/src/gui.cpp",
+  "output": "CMakeFiles/DnDBuilder.dir/src/gui.cpp.obj"
+},
+{
+  "directory": "C:/Users/thlem/Documents/GitHub/Character-Cookbook/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe -DGLFW_DLL @CMakeFiles/DnDBuilder.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\DnDBuilder.dir\\src\\json_utils.cpp.obj -c C:\\Users\\thlem\\Documents\\GitHub\\Character-Cookbook\\src\\json_utils.cpp",
+  "file": "C:/Users/thlem/Documents/GitHub/Character-Cookbook/src/json_utils.cpp",
+  "output": "CMakeFiles/DnDBuilder.dir/src/json_utils.cpp.obj"
+},
+{
+  "directory": "C:/Users/thlem/Documents/GitHub/Character-Cookbook/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe -DGLFW_DLL @CMakeFiles/DnDBuilder.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\DnDBuilder.dir\\src\\main.cpp.obj -c C:\\Users\\thlem\\Documents\\GitHub\\Character-Cookbook\\src\\main.cpp",
+  "file": "C:/Users/thlem/Documents/GitHub/Character-Cookbook/src/main.cpp",
+  "output": "CMakeFiles/DnDBuilder.dir/src/main.cpp.obj"
+},
+{
+  "directory": "C:/Users/thlem/Documents/GitHub/Character-Cookbook/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe -DGLFW_DLL @CMakeFiles/DnDBuilder.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\DnDBuilder.dir\\extern\\imgui\\imgui.cpp.obj -c C:\\Users\\thlem\\Documents\\GitHub\\Character-Cookbook\\extern\\imgui\\imgui.cpp",
+  "file": "C:/Users/thlem/Documents/GitHub/Character-Cookbook/extern/imgui/imgui.cpp",
+  "output": "CMakeFiles/DnDBuilder.dir/extern/imgui/imgui.cpp.obj"
+},
+{
+  "directory": "C:/Users/thlem/Documents/GitHub/Character-Cookbook/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe -DGLFW_DLL @CMakeFiles/DnDBuilder.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\DnDBuilder.dir\\extern\\imgui\\imgui_draw.cpp.obj -c C:\\Users\\thlem\\Documents\\GitHub\\Character-Cookbook\\extern\\imgui\\imgui_draw.cpp",
+  "file": "C:/Users/thlem/Documents/GitHub/Character-Cookbook/extern/imgui/imgui_draw.cpp",
+  "output": "CMakeFiles/DnDBuilder.dir/extern/imgui/imgui_draw.cpp.obj"
+},
+{
+  "directory": "C:/Users/thlem/Documents/GitHub/Character-Cookbook/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe -DGLFW_DLL @CMakeFiles/DnDBuilder.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\DnDBuilder.dir\\extern\\imgui\\imgui_tables.cpp.obj -c C:\\Users\\thlem\\Documents\\GitHub\\Character-Cookbook\\extern\\imgui\\imgui_tables.cpp",
+  "file": "C:/Users/thlem/Documents/GitHub/Character-Cookbook/extern/imgui/imgui_tables.cpp",
+  "output": "CMakeFiles/DnDBuilder.dir/extern/imgui/imgui_tables.cpp.obj"
+},
+{
+  "directory": "C:/Users/thlem/Documents/GitHub/Character-Cookbook/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe -DGLFW_DLL @CMakeFiles/DnDBuilder.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\DnDBuilder.dir\\extern\\imgui\\imgui_widgets.cpp.obj -c C:\\Users\\thlem\\Documents\\GitHub\\Character-Cookbook\\extern\\imgui\\imgui_widgets.cpp",
+  "file": "C:/Users/thlem/Documents/GitHub/Character-Cookbook/extern/imgui/imgui_widgets.cpp",
+  "output": "CMakeFiles/DnDBuilder.dir/extern/imgui/imgui_widgets.cpp.obj"
+},
+{
+  "directory": "C:/Users/thlem/Documents/GitHub/Character-Cookbook/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe -DGLFW_DLL @CMakeFiles/DnDBuilder.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\DnDBuilder.dir\\extern\\imgui\\backends\\imgui_impl_glfw.cpp.obj -c C:\\Users\\thlem\\Documents\\GitHub\\Character-Cookbook\\extern\\imgui\\backends\\imgui_impl_glfw.cpp",
+  "file": "C:/Users/thlem/Documents/GitHub/Character-Cookbook/extern/imgui/backends/imgui_impl_glfw.cpp",
+  "output": "CMakeFiles/DnDBuilder.dir/extern/imgui/backends/imgui_impl_glfw.cpp.obj"
+},
+{
+  "directory": "C:/Users/thlem/Documents/GitHub/Character-Cookbook/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe -DGLFW_DLL @CMakeFiles/DnDBuilder.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\DnDBuilder.dir\\extern\\imgui\\backends\\imgui_impl_opengl3.cpp.obj -c C:\\Users\\thlem\\Documents\\GitHub\\Character-Cookbook\\extern\\imgui\\backends\\imgui_impl_opengl3.cpp",
+  "file": "C:/Users/thlem/Documents/GitHub/Character-Cookbook/extern/imgui/backends/imgui_impl_opengl3.cpp",
+  "output": "CMakeFiles/DnDBuilder.dir/extern/imgui/backends/imgui_impl_opengl3.cpp.obj"
+}
+]

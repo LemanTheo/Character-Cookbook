@@ -1,0 +1,33 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/DnDBuilder.dir/extern/imgui/backends/imgui_impl_glfw.cpp.obj"
+  "CMakeFiles/DnDBuilder.dir/extern/imgui/backends/imgui_impl_glfw.cpp.obj.d"
+  "CMakeFiles/DnDBuilder.dir/extern/imgui/backends/imgui_impl_opengl3.cpp.obj"
+  "CMakeFiles/DnDBuilder.dir/extern/imgui/backends/imgui_impl_opengl3.cpp.obj.d"
+  "CMakeFiles/DnDBuilder.dir/extern/imgui/imgui.cpp.obj"
+  "CMakeFiles/DnDBuilder.dir/extern/imgui/imgui.cpp.obj.d"
+  "CMakeFiles/DnDBuilder.dir/extern/imgui/imgui_draw.cpp.obj"
+  "CMakeFiles/DnDBuilder.dir/extern/imgui/imgui_draw.cpp.obj.d"
+  "CMakeFiles/DnDBuilder.dir/extern/imgui/imgui_tables.cpp.obj"
+  "CMakeFiles/DnDBuilder.dir/extern/imgui/imgui_tables.cpp.obj.d"
+  "CMakeFiles/DnDBuilder.dir/extern/imgui/imgui_widgets.cpp.obj"
+  "CMakeFiles/DnDBuilder.dir/extern/imgui/imgui_widgets.cpp.obj.d"
+  "CMakeFiles/DnDBuilder.dir/src/campaign_manager.cpp.obj"
+  "CMakeFiles/DnDBuilder.dir/src/campaign_manager.cpp.obj.d"
+  "CMakeFiles/DnDBuilder.dir/src/character.cpp.obj"
+  "CMakeFiles/DnDBuilder.dir/src/character.cpp.obj.d"
+  "CMakeFiles/DnDBuilder.dir/src/gui.cpp.obj"
+  "CMakeFiles/DnDBuilder.dir/src/gui.cpp.obj.d"
+  "CMakeFiles/DnDBuilder.dir/src/json_utils.cpp.obj"
+  "CMakeFiles/DnDBuilder.dir/src/json_utils.cpp.obj.d"
+  "CMakeFiles/DnDBuilder.dir/src/main.cpp.obj"
+  "CMakeFiles/DnDBuilder.dir/src/main.cpp.obj.d"
+  "DnDBuilder.exe"
+  "DnDBuilder.exe.manifest"
+  "DnDBuilder.pdb"
+  "libDnDBuilder.dll.a"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang CXX)
+  include(CMakeFiles/DnDBuilder.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

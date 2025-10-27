@@ -1,0 +1,3 @@
+"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\DnDBuilder.dir/objects.a
+C:\msys64\ucrt64\bin\ar.exe qc CMakeFiles\DnDBuilder.dir/objects.a @CMakeFiles\DnDBuilder.dir\objects1.rsp
+C:\msys64\ucrt64\bin\g++.exe -g -Wl,--whole-archive CMakeFiles\DnDBuilder.dir/objects.a -Wl,--no-whole-archive -o DnDBuilder.exe -Wl,--out-implib,libDnDBuilder.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\DnDBuilder.dir\linkLibs.rsp
