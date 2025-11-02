@@ -1,0 +1,15 @@
+{
+    "CharacterList": [
+        {
+            "name": "exemple",
+            "files": {
+                "Sheet":"Insert file Location",
+                "CharacterPicture":"Insert file location",
+                "CharacterToken": "Insert file location"
+            },
+            "Libraries":[
+                "DND Player's Handbook"
+            ]
+        }
+    ]
+}
