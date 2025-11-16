@@ -30,19 +30,19 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 38,
+				"line" : 39,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 50,
+				"line" : 51,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 65,
+				"line" : 66,
 				"parent" : 0
 			},
 			{
@@ -54,7 +54,7 @@
 			{
 				"command" : 3,
 				"file" : 0,
-				"line" : 43,
+				"line" : 44,
 				"parent" : 0
 			}
 		]
@@ -92,10 +92,6 @@
 				{
 					"backtrace" : 5,
 					"path" : "C:/Users/thlem/Documents/GitHub/Character-Cookbook/extern/imgui/backends"
-				},
-				{
-					"backtrace" : 5,
-					"path" : "C:/Users/thlem/Documents/GitHub/Character-Cookbook/extern/glfw"
 				},
 				{
 					"backtrace" : 2,
