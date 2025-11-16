@@ -14,6 +14,9 @@
 # EXTERNAL cache entries
 ########################
 
+//Build shared libraries
+BUILD_SHARED_LIBS:BOOL=OFF
+
 //Path to a program.
 CMAKE_ADDR2LINE:FILEPATH=C:/msys64/ucrt64/bin/addr2line.exe
 
@@ -313,6 +316,9 @@ CharacterCookbook_IS_TOP_LEVEL:STATIC=ON
 //Value Computed by CMake
 CharacterCookbook_SOURCE_DIR:STATIC=C:/Users/thlem/Documents/GitHub/Character-Cookbook
 
+//Doxygen documentation generation tool (https://www.doxygen.nl)
+DOXYGEN_EXECUTABLE:FILEPATH=DOXYGEN_EXECUTABLE-NOTFOUND
+
 //Value Computed by CMake
 DnDCharacterBuilder_BINARY_DIR:STATIC=C:/Users/thlem/Documents/GitHub/Character-Cookbook/build
 
@@ -321,6 +327,37 @@ DnDCharacterBuilder_IS_TOP_LEVEL:STATIC=ON
 
 //Value Computed by CMake
 DnDCharacterBuilder_SOURCE_DIR:STATIC=C:/Users/thlem/Documents/GitHub/Character-Cookbook
+
+//Value Computed by CMake
+GLFW_BINARY_DIR:STATIC=C:/Users/thlem/Documents/GitHub/Character-Cookbook/build/extern/glfw
+
+//Build the GLFW documentation
+GLFW_BUILD_DOCS:BOOL=ON
+
+//Build the GLFW example programs
+GLFW_BUILD_EXAMPLES:BOOL=OFF
+
+//Build the GLFW test programs
+GLFW_BUILD_TESTS:BOOL=OFF
+
+//Build support for Win32
+GLFW_BUILD_WIN32:BOOL=ON
+
+//Generate installation target
+GLFW_INSTALL:BOOL=ON
+
+//Value Computed by CMake
+GLFW_IS_TOP_LEVEL:STATIC=OFF
+
+//Library type override for GLFW (SHARED, STATIC, OBJECT, or empty
+// to follow BUILD_SHARED_LIBS)
+GLFW_LIBRARY_TYPE:STRING=
+
+//Value Computed by CMake
+GLFW_SOURCE_DIR:STATIC=C:/Users/thlem/Documents/GitHub/Character-Cookbook/extern/glfw
+
+//Force use of high-performance GPU on hybrid systems
+GLFW_USE_HYBRID_HPG:BOOL=OFF
 
 //Build the unit tests when BUILD_TESTING is enabled.
 JSON_BuildTests:BOOL=OFF
@@ -575,10 +612,16 @@ CMAKE_STRIP-ADVANCED:INTERNAL=1
 CMAKE_TAPI-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_VERBOSE_MAKEFILE
 CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: DOXYGEN_EXECUTABLE
+DOXYGEN_EXECUTABLE-ADVANCED:INTERNAL=1
 //Details about finding OpenGL
 FIND_PACKAGE_MESSAGE_DETAILS_OpenGL:INTERNAL=[opengl32][ ][v()]
 //Details about finding Threads
 FIND_PACKAGE_MESSAGE_DETAILS_Threads:INTERNAL=[TRUE][v()]
+//GLFW pkg-config Libs.private
+GLFW_PKG_CONFIG_LIBS_PRIVATE:INTERNAL=-lgdi32
+//GLFW pkg-config Requires.private
+GLFW_PKG_CONFIG_REQUIRES_PRIVATE:INTERNAL=
 NLOHMANN_JSON_CONFIG_INSTALL_DIR:INTERNAL=share/cmake/nlohmann_json
 //ADVANCED property for variable: OPENGL_gl_LIBRARY
 OPENGL_gl_LIBRARY-ADVANCED:INTERNAL=1
