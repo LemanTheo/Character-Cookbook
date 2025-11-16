@@ -25,7 +25,7 @@ set(IMGUI_SRC
 
 # GL3W (system package or installed library)
 include_directories(${CMAKE_SOURCE_DIR}/extern/gl3w)
-
+include_directories(${OPENGL_INCLUDE_DIR})
 # GLFW (system package or installed library)
 find_package(glfw3 3.3 REQUIRED)
 
@@ -44,6 +44,7 @@ target_include_directories(DnDBuilder PRIVATE
     src
     extern/imgui
     extern/imgui/backends
+    extern/glfw
 )
 
 target_link_libraries(DnDBuilder
