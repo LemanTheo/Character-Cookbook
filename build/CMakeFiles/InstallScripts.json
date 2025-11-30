@@ -1,0 +1,8 @@
+{
+	"InstallScripts" : 
+	[
+		"C:/Users/thlem/Documents/GitHub/Character-Cookbook/build/cmake_install.cmake",
+		"C:/Users/thlem/Documents/GitHub/Character-Cookbook/build/extern/nlohmann_json/cmake_install.cmake"
+	],
+	"Parallel" : false
+}
