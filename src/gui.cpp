@@ -19,7 +19,8 @@ void render_character_editor(Character& c) {
     c.cls = class_buf;
 
     if (ImGui::Button("Save")) {
-        json_utils::save_character(c, "data/characters/" + c.name + ".json");
+        json_utils::save_character(c, "../data/characters/" + c.name + ".json");
+        //SaveCharacters("data/characters/" + c.name + ".json", characters);
     }
 
     ImGui::End();

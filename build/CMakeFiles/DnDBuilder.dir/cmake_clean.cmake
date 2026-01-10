@@ -15,6 +15,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/DnDBuilder.dir/src/campaign_manager.cpp.obj.d"
   "CMakeFiles/DnDBuilder.dir/src/character.cpp.obj"
   "CMakeFiles/DnDBuilder.dir/src/character.cpp.obj.d"
+  "CMakeFiles/DnDBuilder.dir/src/character_builder.cpp.obj"
+  "CMakeFiles/DnDBuilder.dir/src/character_builder.cpp.obj.d"
   "CMakeFiles/DnDBuilder.dir/src/gui.cpp.obj"
   "CMakeFiles/DnDBuilder.dir/src/gui.cpp.obj.d"
   "CMakeFiles/DnDBuilder.dir/src/json_utils.cpp.obj"

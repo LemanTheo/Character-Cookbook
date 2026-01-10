@@ -320,6 +320,30 @@ src/character.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\DnDBuilder.dir\build.make CMakeFiles/DnDBuilder.dir/src/character.cpp.s
 .PHONY : src/character.cpp.s
 
+src/character_builder.obj: src/character_builder.cpp.obj
+.PHONY : src/character_builder.obj
+
+# target to build an object file
+src/character_builder.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DnDBuilder.dir\build.make CMakeFiles/DnDBuilder.dir/src/character_builder.cpp.obj
+.PHONY : src/character_builder.cpp.obj
+
+src/character_builder.i: src/character_builder.cpp.i
+.PHONY : src/character_builder.i
+
+# target to preprocess a source file
+src/character_builder.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DnDBuilder.dir\build.make CMakeFiles/DnDBuilder.dir/src/character_builder.cpp.i
+.PHONY : src/character_builder.cpp.i
+
+src/character_builder.s: src/character_builder.cpp.s
+.PHONY : src/character_builder.s
+
+# target to generate assembly for a file
+src/character_builder.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DnDBuilder.dir\build.make CMakeFiles/DnDBuilder.dir/src/character_builder.cpp.s
+.PHONY : src/character_builder.cpp.s
+
 src/gui.obj: src/gui.cpp.obj
 .PHONY : src/gui.obj
 
@@ -425,6 +449,9 @@ help:
 	@echo ... src/character.obj
 	@echo ... src/character.i
 	@echo ... src/character.s
+	@echo ... src/character_builder.obj
+	@echo ... src/character_builder.i
+	@echo ... src/character_builder.s
 	@echo ... src/gui.obj
 	@echo ... src/gui.i
 	@echo ... src/gui.s

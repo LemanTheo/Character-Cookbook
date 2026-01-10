@@ -101,11 +101,26 @@ CMakeFiles/DnDBuilder.dir/src/character.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/DnDBuilder.dir/src/character.cpp.s"
 	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\thlem\Documents\GitHub\Character-Cookbook\src\character.cpp -o CMakeFiles\DnDBuilder.dir\src\character.cpp.s
 
+CMakeFiles/DnDBuilder.dir/src/character_builder.cpp.obj: CMakeFiles/DnDBuilder.dir/flags.make
+CMakeFiles/DnDBuilder.dir/src/character_builder.cpp.obj: CMakeFiles/DnDBuilder.dir/includes_CXX.rsp
+CMakeFiles/DnDBuilder.dir/src/character_builder.cpp.obj: C:/Users/thlem/Documents/GitHub/Character-Cookbook/src/character_builder.cpp
+CMakeFiles/DnDBuilder.dir/src/character_builder.cpp.obj: CMakeFiles/DnDBuilder.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\thlem\Documents\GitHub\Character-Cookbook\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/DnDBuilder.dir/src/character_builder.cpp.obj"
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/DnDBuilder.dir/src/character_builder.cpp.obj -MF CMakeFiles\DnDBuilder.dir\src\character_builder.cpp.obj.d -o CMakeFiles\DnDBuilder.dir\src\character_builder.cpp.obj -c C:\Users\thlem\Documents\GitHub\Character-Cookbook\src\character_builder.cpp
+
+CMakeFiles/DnDBuilder.dir/src/character_builder.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/DnDBuilder.dir/src/character_builder.cpp.i"
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\thlem\Documents\GitHub\Character-Cookbook\src\character_builder.cpp > CMakeFiles\DnDBuilder.dir\src\character_builder.cpp.i
+
+CMakeFiles/DnDBuilder.dir/src/character_builder.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/DnDBuilder.dir/src/character_builder.cpp.s"
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\thlem\Documents\GitHub\Character-Cookbook\src\character_builder.cpp -o CMakeFiles\DnDBuilder.dir\src\character_builder.cpp.s
+
 CMakeFiles/DnDBuilder.dir/src/gui.cpp.obj: CMakeFiles/DnDBuilder.dir/flags.make
 CMakeFiles/DnDBuilder.dir/src/gui.cpp.obj: CMakeFiles/DnDBuilder.dir/includes_CXX.rsp
 CMakeFiles/DnDBuilder.dir/src/gui.cpp.obj: C:/Users/thlem/Documents/GitHub/Character-Cookbook/src/gui.cpp
 CMakeFiles/DnDBuilder.dir/src/gui.cpp.obj: CMakeFiles/DnDBuilder.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\thlem\Documents\GitHub\Character-Cookbook\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/DnDBuilder.dir/src/gui.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\thlem\Documents\GitHub\Character-Cookbook\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/DnDBuilder.dir/src/gui.cpp.obj"
 	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/DnDBuilder.dir/src/gui.cpp.obj -MF CMakeFiles\DnDBuilder.dir\src\gui.cpp.obj.d -o CMakeFiles\DnDBuilder.dir\src\gui.cpp.obj -c C:\Users\thlem\Documents\GitHub\Character-Cookbook\src\gui.cpp
 
 CMakeFiles/DnDBuilder.dir/src/gui.cpp.i: cmake_force
@@ -120,7 +135,7 @@ CMakeFiles/DnDBuilder.dir/src/json_utils.cpp.obj: CMakeFiles/DnDBuilder.dir/flag
 CMakeFiles/DnDBuilder.dir/src/json_utils.cpp.obj: CMakeFiles/DnDBuilder.dir/includes_CXX.rsp
 CMakeFiles/DnDBuilder.dir/src/json_utils.cpp.obj: C:/Users/thlem/Documents/GitHub/Character-Cookbook/src/json_utils.cpp
 CMakeFiles/DnDBuilder.dir/src/json_utils.cpp.obj: CMakeFiles/DnDBuilder.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\thlem\Documents\GitHub\Character-Cookbook\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/DnDBuilder.dir/src/json_utils.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\thlem\Documents\GitHub\Character-Cookbook\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/DnDBuilder.dir/src/json_utils.cpp.obj"
 	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/DnDBuilder.dir/src/json_utils.cpp.obj -MF CMakeFiles\DnDBuilder.dir\src\json_utils.cpp.obj.d -o CMakeFiles\DnDBuilder.dir\src\json_utils.cpp.obj -c C:\Users\thlem\Documents\GitHub\Character-Cookbook\src\json_utils.cpp
 
 CMakeFiles/DnDBuilder.dir/src/json_utils.cpp.i: cmake_force
@@ -135,7 +150,7 @@ CMakeFiles/DnDBuilder.dir/src/main.cpp.obj: CMakeFiles/DnDBuilder.dir/flags.make
 CMakeFiles/DnDBuilder.dir/src/main.cpp.obj: CMakeFiles/DnDBuilder.dir/includes_CXX.rsp
 CMakeFiles/DnDBuilder.dir/src/main.cpp.obj: C:/Users/thlem/Documents/GitHub/Character-Cookbook/src/main.cpp
 CMakeFiles/DnDBuilder.dir/src/main.cpp.obj: CMakeFiles/DnDBuilder.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\thlem\Documents\GitHub\Character-Cookbook\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/DnDBuilder.dir/src/main.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\thlem\Documents\GitHub\Character-Cookbook\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/DnDBuilder.dir/src/main.cpp.obj"
 	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/DnDBuilder.dir/src/main.cpp.obj -MF CMakeFiles\DnDBuilder.dir\src\main.cpp.obj.d -o CMakeFiles\DnDBuilder.dir\src\main.cpp.obj -c C:\Users\thlem\Documents\GitHub\Character-Cookbook\src\main.cpp
 
 CMakeFiles/DnDBuilder.dir/src/main.cpp.i: cmake_force
@@ -150,7 +165,7 @@ CMakeFiles/DnDBuilder.dir/extern/imgui/imgui.cpp.obj: CMakeFiles/DnDBuilder.dir/
 CMakeFiles/DnDBuilder.dir/extern/imgui/imgui.cpp.obj: CMakeFiles/DnDBuilder.dir/includes_CXX.rsp
 CMakeFiles/DnDBuilder.dir/extern/imgui/imgui.cpp.obj: C:/Users/thlem/Documents/GitHub/Character-Cookbook/extern/imgui/imgui.cpp
 CMakeFiles/DnDBuilder.dir/extern/imgui/imgui.cpp.obj: CMakeFiles/DnDBuilder.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\thlem\Documents\GitHub\Character-Cookbook\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/DnDBuilder.dir/extern/imgui/imgui.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\thlem\Documents\GitHub\Character-Cookbook\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/DnDBuilder.dir/extern/imgui/imgui.cpp.obj"
 	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/DnDBuilder.dir/extern/imgui/imgui.cpp.obj -MF CMakeFiles\DnDBuilder.dir\extern\imgui\imgui.cpp.obj.d -o CMakeFiles\DnDBuilder.dir\extern\imgui\imgui.cpp.obj -c C:\Users\thlem\Documents\GitHub\Character-Cookbook\extern\imgui\imgui.cpp
 
 CMakeFiles/DnDBuilder.dir/extern/imgui/imgui.cpp.i: cmake_force
@@ -165,7 +180,7 @@ CMakeFiles/DnDBuilder.dir/extern/imgui/imgui_draw.cpp.obj: CMakeFiles/DnDBuilder
 CMakeFiles/DnDBuilder.dir/extern/imgui/imgui_draw.cpp.obj: CMakeFiles/DnDBuilder.dir/includes_CXX.rsp
 CMakeFiles/DnDBuilder.dir/extern/imgui/imgui_draw.cpp.obj: C:/Users/thlem/Documents/GitHub/Character-Cookbook/extern/imgui/imgui_draw.cpp
 CMakeFiles/DnDBuilder.dir/extern/imgui/imgui_draw.cpp.obj: CMakeFiles/DnDBuilder.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\thlem\Documents\GitHub\Character-Cookbook\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/DnDBuilder.dir/extern/imgui/imgui_draw.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\thlem\Documents\GitHub\Character-Cookbook\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/DnDBuilder.dir/extern/imgui/imgui_draw.cpp.obj"
 	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/DnDBuilder.dir/extern/imgui/imgui_draw.cpp.obj -MF CMakeFiles\DnDBuilder.dir\extern\imgui\imgui_draw.cpp.obj.d -o CMakeFiles\DnDBuilder.dir\extern\imgui\imgui_draw.cpp.obj -c C:\Users\thlem\Documents\GitHub\Character-Cookbook\extern\imgui\imgui_draw.cpp
 
 CMakeFiles/DnDBuilder.dir/extern/imgui/imgui_draw.cpp.i: cmake_force
@@ -180,7 +195,7 @@ CMakeFiles/DnDBuilder.dir/extern/imgui/imgui_tables.cpp.obj: CMakeFiles/DnDBuild
 CMakeFiles/DnDBuilder.dir/extern/imgui/imgui_tables.cpp.obj: CMakeFiles/DnDBuilder.dir/includes_CXX.rsp
 CMakeFiles/DnDBuilder.dir/extern/imgui/imgui_tables.cpp.obj: C:/Users/thlem/Documents/GitHub/Character-Cookbook/extern/imgui/imgui_tables.cpp
 CMakeFiles/DnDBuilder.dir/extern/imgui/imgui_tables.cpp.obj: CMakeFiles/DnDBuilder.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\thlem\Documents\GitHub\Character-Cookbook\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/DnDBuilder.dir/extern/imgui/imgui_tables.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\thlem\Documents\GitHub\Character-Cookbook\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/DnDBuilder.dir/extern/imgui/imgui_tables.cpp.obj"
 	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/DnDBuilder.dir/extern/imgui/imgui_tables.cpp.obj -MF CMakeFiles\DnDBuilder.dir\extern\imgui\imgui_tables.cpp.obj.d -o CMakeFiles\DnDBuilder.dir\extern\imgui\imgui_tables.cpp.obj -c C:\Users\thlem\Documents\GitHub\Character-Cookbook\extern\imgui\imgui_tables.cpp
 
 CMakeFiles/DnDBuilder.dir/extern/imgui/imgui_tables.cpp.i: cmake_force
@@ -195,7 +210,7 @@ CMakeFiles/DnDBuilder.dir/extern/imgui/imgui_widgets.cpp.obj: CMakeFiles/DnDBuil
 CMakeFiles/DnDBuilder.dir/extern/imgui/imgui_widgets.cpp.obj: CMakeFiles/DnDBuilder.dir/includes_CXX.rsp
 CMakeFiles/DnDBuilder.dir/extern/imgui/imgui_widgets.cpp.obj: C:/Users/thlem/Documents/GitHub/Character-Cookbook/extern/imgui/imgui_widgets.cpp
 CMakeFiles/DnDBuilder.dir/extern/imgui/imgui_widgets.cpp.obj: CMakeFiles/DnDBuilder.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\thlem\Documents\GitHub\Character-Cookbook\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/DnDBuilder.dir/extern/imgui/imgui_widgets.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\thlem\Documents\GitHub\Character-Cookbook\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/DnDBuilder.dir/extern/imgui/imgui_widgets.cpp.obj"
 	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/DnDBuilder.dir/extern/imgui/imgui_widgets.cpp.obj -MF CMakeFiles\DnDBuilder.dir\extern\imgui\imgui_widgets.cpp.obj.d -o CMakeFiles\DnDBuilder.dir\extern\imgui\imgui_widgets.cpp.obj -c C:\Users\thlem\Documents\GitHub\Character-Cookbook\extern\imgui\imgui_widgets.cpp
 
 CMakeFiles/DnDBuilder.dir/extern/imgui/imgui_widgets.cpp.i: cmake_force
@@ -210,7 +225,7 @@ CMakeFiles/DnDBuilder.dir/extern/imgui/backends/imgui_impl_glfw.cpp.obj: CMakeFi
 CMakeFiles/DnDBuilder.dir/extern/imgui/backends/imgui_impl_glfw.cpp.obj: CMakeFiles/DnDBuilder.dir/includes_CXX.rsp
 CMakeFiles/DnDBuilder.dir/extern/imgui/backends/imgui_impl_glfw.cpp.obj: C:/Users/thlem/Documents/GitHub/Character-Cookbook/extern/imgui/backends/imgui_impl_glfw.cpp
 CMakeFiles/DnDBuilder.dir/extern/imgui/backends/imgui_impl_glfw.cpp.obj: CMakeFiles/DnDBuilder.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\thlem\Documents\GitHub\Character-Cookbook\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/DnDBuilder.dir/extern/imgui/backends/imgui_impl_glfw.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\thlem\Documents\GitHub\Character-Cookbook\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/DnDBuilder.dir/extern/imgui/backends/imgui_impl_glfw.cpp.obj"
 	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/DnDBuilder.dir/extern/imgui/backends/imgui_impl_glfw.cpp.obj -MF CMakeFiles\DnDBuilder.dir\extern\imgui\backends\imgui_impl_glfw.cpp.obj.d -o CMakeFiles\DnDBuilder.dir\extern\imgui\backends\imgui_impl_glfw.cpp.obj -c C:\Users\thlem\Documents\GitHub\Character-Cookbook\extern\imgui\backends\imgui_impl_glfw.cpp
 
 CMakeFiles/DnDBuilder.dir/extern/imgui/backends/imgui_impl_glfw.cpp.i: cmake_force
@@ -225,7 +240,7 @@ CMakeFiles/DnDBuilder.dir/extern/imgui/backends/imgui_impl_opengl3.cpp.obj: CMak
 CMakeFiles/DnDBuilder.dir/extern/imgui/backends/imgui_impl_opengl3.cpp.obj: CMakeFiles/DnDBuilder.dir/includes_CXX.rsp
 CMakeFiles/DnDBuilder.dir/extern/imgui/backends/imgui_impl_opengl3.cpp.obj: C:/Users/thlem/Documents/GitHub/Character-Cookbook/extern/imgui/backends/imgui_impl_opengl3.cpp
 CMakeFiles/DnDBuilder.dir/extern/imgui/backends/imgui_impl_opengl3.cpp.obj: CMakeFiles/DnDBuilder.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\thlem\Documents\GitHub\Character-Cookbook\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/DnDBuilder.dir/extern/imgui/backends/imgui_impl_opengl3.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\thlem\Documents\GitHub\Character-Cookbook\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/DnDBuilder.dir/extern/imgui/backends/imgui_impl_opengl3.cpp.obj"
 	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/DnDBuilder.dir/extern/imgui/backends/imgui_impl_opengl3.cpp.obj -MF CMakeFiles\DnDBuilder.dir\extern\imgui\backends\imgui_impl_opengl3.cpp.obj.d -o CMakeFiles\DnDBuilder.dir\extern\imgui\backends\imgui_impl_opengl3.cpp.obj -c C:\Users\thlem\Documents\GitHub\Character-Cookbook\extern\imgui\backends\imgui_impl_opengl3.cpp
 
 CMakeFiles/DnDBuilder.dir/extern/imgui/backends/imgui_impl_opengl3.cpp.i: cmake_force
@@ -240,6 +255,7 @@ CMakeFiles/DnDBuilder.dir/extern/imgui/backends/imgui_impl_opengl3.cpp.s: cmake_
 DnDBuilder_OBJECTS = \
 "CMakeFiles/DnDBuilder.dir/src/campaign_manager.cpp.obj" \
 "CMakeFiles/DnDBuilder.dir/src/character.cpp.obj" \
+"CMakeFiles/DnDBuilder.dir/src/character_builder.cpp.obj" \
 "CMakeFiles/DnDBuilder.dir/src/gui.cpp.obj" \
 "CMakeFiles/DnDBuilder.dir/src/json_utils.cpp.obj" \
 "CMakeFiles/DnDBuilder.dir/src/main.cpp.obj" \
@@ -255,6 +271,7 @@ DnDBuilder_EXTERNAL_OBJECTS =
 
 DnDBuilder.exe: CMakeFiles/DnDBuilder.dir/src/campaign_manager.cpp.obj
 DnDBuilder.exe: CMakeFiles/DnDBuilder.dir/src/character.cpp.obj
+DnDBuilder.exe: CMakeFiles/DnDBuilder.dir/src/character_builder.cpp.obj
 DnDBuilder.exe: CMakeFiles/DnDBuilder.dir/src/gui.cpp.obj
 DnDBuilder.exe: CMakeFiles/DnDBuilder.dir/src/json_utils.cpp.obj
 DnDBuilder.exe: CMakeFiles/DnDBuilder.dir/src/main.cpp.obj
@@ -269,7 +286,7 @@ DnDBuilder.exe: C:/msys64/ucrt64/lib/libglfw3.dll.a
 DnDBuilder.exe: CMakeFiles/DnDBuilder.dir/linkLibs.rsp
 DnDBuilder.exe: CMakeFiles/DnDBuilder.dir/objects1.rsp
 DnDBuilder.exe: CMakeFiles/DnDBuilder.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\thlem\Documents\GitHub\Character-Cookbook\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX executable DnDBuilder.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\thlem\Documents\GitHub\Character-Cookbook\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Linking CXX executable DnDBuilder.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\DnDBuilder.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

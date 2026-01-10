@@ -13,6 +13,12 @@
 },
 {
   "directory": "C:/Users/thlem/Documents/GitHub/Character-Cookbook/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe -DGLFW_DLL @CMakeFiles/DnDBuilder.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\DnDBuilder.dir\\src\\character_builder.cpp.obj -c C:\\Users\\thlem\\Documents\\GitHub\\Character-Cookbook\\src\\character_builder.cpp",
+  "file": "C:/Users/thlem/Documents/GitHub/Character-Cookbook/src/character_builder.cpp",
+  "output": "CMakeFiles/DnDBuilder.dir/src/character_builder.cpp.obj"
+},
+{
+  "directory": "C:/Users/thlem/Documents/GitHub/Character-Cookbook/build",
   "command": "C:\\msys64\\ucrt64\\bin\\g++.exe -DGLFW_DLL @CMakeFiles/DnDBuilder.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\DnDBuilder.dir\\src\\gui.cpp.obj -c C:\\Users\\thlem\\Documents\\GitHub\\Character-Cookbook\\src\\gui.cpp",
   "file": "C:/Users/thlem/Documents/GitHub/Character-Cookbook/src/gui.cpp",
   "output": "CMakeFiles/DnDBuilder.dir/src/gui.cpp.obj"

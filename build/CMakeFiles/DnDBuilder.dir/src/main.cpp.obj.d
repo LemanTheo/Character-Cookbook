@@ -307,4 +307,7 @@ CMakeFiles/DnDBuilder.dir/src/main.cpp.obj: \
  C:/msys64/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/basic_file.h \
  C:/msys64/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/c++io.h \
  C:/msys64/ucrt64/include/c++/14.2.0/bits/fstream.tcc \
- C:/msys64/ucrt64/include/c++/14.2.0/iostream
+ C:/msys64/ucrt64/include/c++/14.2.0/iostream \
+ C:\Users\thlem\Documents\GitHub\Character-Cookbook\src\json_utils.h \
+ C:\Users\thlem\Documents\GitHub\Character-Cookbook\src\character.h \
+ C:\Users\thlem\Documents\GitHub\Character-Cookbook\src\character_builder.h
