@@ -33,7 +33,7 @@ void CampaignManager::render() {
 
     ImGui::Separator();
 
-    if (characters.empty()) {
+    if (characters.empty()) { 
         ImGui::Text("No characters found. Click 'Reload' or 'New Character'.");
     } else {
         for (int i = 0; i < static_cast<int>(characters.size()); ++i) {

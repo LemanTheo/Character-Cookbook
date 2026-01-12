@@ -1,2 +1,18 @@
+# External libraries
 !extern/
 !extern/**/*
+
+# Build artifacts
+/build/
+out/
+*.exe
+*.dll
+*.obj
+
+# User-generated data
+/data/characters/*.json
+
+# OS / my editor junk
+.vscode/
+.DS_Store
+Thumbs.db

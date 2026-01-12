@@ -8,15 +8,17 @@
 #include <string>
 #include <iostream>
 
+// Import Créateur persos
+#include "json_utils.h"
+#include "character_builder.h"
+#include "character.h"
+
+CharacterBuilderManager characterBuilder;
+
+
 // ===================================================
 //                --- STRUCTS ---
 // ===================================================
-struct Character {
-    std::string name;
-    std::string race;
-    std::string cls; // class
-};
-
 std::vector<Character> characters;
 
 struct GLButton {
@@ -28,6 +30,8 @@ struct GLButton {
 // ===================================================
 //              --- JSON LOAD/SAVE ---
 // ===================================================
+
+/*
 void LoadCharacters(const std::string& filename) {
     std::ifstream file(filename);
     if (!file.is_open()) return;
@@ -52,6 +56,7 @@ void SaveCharacters(const std::string& filename) {
     std::ofstream file(filename);
     file << j.dump(4);
 }
+*/
 
 // ===================================================
 //             --- OPENGL BUTTON RENDER ---
@@ -100,7 +105,8 @@ int main() {
     ImGui_ImplGlfw_InitForOpenGL(window, true);
     ImGui_ImplOpenGL3_Init("#version 130");
 
-    LoadCharacters("characters.json");
+    characters = json_utils::load_all_characters("../data/characters");
+
 
     char newName[128] = "";
     char newRace[128] = "";
@@ -168,13 +174,27 @@ int main() {
             ImGui::InputText("Class", newClass, 128);
 
             if (ImGui::Button("Add Character")) {
-                characters.push_back({newName, newRace, newClass});
-                SaveCharacters("characters.json");
+                characters.emplace_back(
+                    newName,
+                    newRace,
+                    newClass,
+                    1 // starting level
+                );
+
+                json_utils::save_character(characters.back(),"characters.json");
                 newName[0] = newRace[0] = newClass[0] = '\0';
             }
 
             ImGui::End();
         }
+
+        // =================================================
+        //                ---  Builder  ---
+        // =================================================
+        // Character Builder windows (opened by red button)
+        characterBuilder.Render(characters);
+
+
 
         // =================================================
         //                --- RENDERING ---
@@ -194,8 +214,11 @@ int main() {
 
         // Handle button click AFTER drawing
         if (backgroundButton.pressed) {
-            std::cout << "Background Button Clicked!" << std::endl;
-            backgroundButton.pressed = false;
+            if (backgroundButton.pressed) {
+                characterBuilder.OpenNewBuilder();
+                backgroundButton.pressed = false;
+            }
+
         }
 
         // ====== IMGUI RENDER ======
