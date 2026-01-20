@@ -1,7 +1,7 @@
 #pragma once
 #include <vector>
 #include <string>
-#include "character.h"
+#include "Character_Management/character.h"
 
 class CampaignManager {
 public:

@@ -23,13 +23,11 @@ void CharacterBuilderManager::Render(std::vector<Character>& characters) {
             ImGui::Separator();
 
             if (ImGui::Button("Create")) {
-                Character c;
-                c.name = draft.name;
-                c.race = draft.race;
-                c.cls  = draft.cls;
+                Character c(draft.name, CharacterRace(), CharacterClass(), 1);
 
                 characters.push_back(c);
-                json_utils::save_character(c, "../data/characters");
+                string folder = "../data/characters";
+                json_utils::save_character(c, folder);
                 draft.open = false;
             }
 

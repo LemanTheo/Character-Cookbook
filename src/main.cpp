@@ -11,7 +11,7 @@
 // Import Créateur persos
 #include "json_utils.h"
 #include "character_builder.h"
-#include "character.h"
+#include "Character_Management/character.h"
 
 CharacterBuilderManager characterBuilder;
 
@@ -162,9 +162,9 @@ int main() {
             ImGui::Text("Characters in your campaign:");
             for (size_t i = 0; i < characters.size(); ++i) {
                 ImGui::BulletText("%s (%s %s)",
-                    characters[i].name.c_str(),
-                    characters[i].race.c_str(),
-                    characters[i].cls.c_str());
+                    characters[i].getName().c_str(),
+                    characters[i].getRace().getName().c_str(),
+                    characters[i].getClass().getName().c_str());
             }
 
             ImGui::Separator();
@@ -176,12 +176,13 @@ int main() {
             if (ImGui::Button("Add Character")) {
                 characters.emplace_back(
                     newName,
-                    newRace,
-                    newClass,
+                    CharacterRace(),
+                    CharacterClass(),
                     1 // starting level
                 );
 
-                json_utils::save_character(characters.back(),"characters.json");
+                string fileName = "data/characters";
+                json_utils::save_character(characters.back(),fileName);
                 newName[0] = newRace[0] = newClass[0] = '\0';
             }
 
