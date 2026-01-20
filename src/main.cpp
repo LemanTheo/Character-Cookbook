@@ -13,6 +13,9 @@
 #include "character_builder.h"
 #include "character.h"
 
+// Import Bouttons : D
+#include "gl_buttons.h"
+
 CharacterBuilderManager characterBuilder;
 
 
@@ -21,11 +24,7 @@ CharacterBuilderManager characterBuilder;
 // ===================================================
 std::vector<Character> characters;
 
-struct GLButton {
-    float x, y, w, h;
-    bool hovered = false;
-    bool pressed = false;
-};
+//here was before the button deffinition, placed now in gl_button for clean main.cpp
 
 // ===================================================
 //              --- JSON LOAD/SAVE ---
@@ -61,6 +60,7 @@ void SaveCharacters(const std::string& filename) {
 // ===================================================
 //             --- OPENGL BUTTON RENDER ---
 // ===================================================
+/*
 void DrawGLButton(const GLButton& btn) {
     int display_w, display_h;
     glfwGetFramebufferSize(glfwGetCurrentContext(), &display_w, &display_h);
@@ -84,7 +84,7 @@ void DrawGLButton(const GLButton& btn) {
     glVertex2f(btn.x + btn.w, btn.y + btn.h);
     glVertex2f(btn.x, btn.y + btn.h);
     glEnd();
-}
+}*/
 
 // ===================================================
 //                    --- MAIN ---
@@ -131,10 +131,8 @@ int main() {
             my >= backgroundButton.y &&
             my <= backgroundButton.y + backgroundButton.h;
 
-        if (backgroundButton.hovered &&
-            glfwGetMouseButton(window, GLFW_MOUSE_BUTTON_LEFT) == GLFW_PRESS)
-        {
-            backgroundButton.pressed = true;
+        if (HandleGLButton(backgroundButton)) {
+            characterBuilder.OpenNewBuilder();
         }
 
         // =================================================
@@ -212,13 +210,8 @@ int main() {
         // ====== DRAW BACKGROUND BUTTON ======
         DrawGLButton(backgroundButton);
 
-        // Handle button click AFTER drawing
-        if (backgroundButton.pressed) {
-            if (backgroundButton.pressed) {
-                characterBuilder.OpenNewBuilder();
-                backgroundButton.pressed = false;
-            }
-
+        if (HandleGLButton(backgroundButton)) {
+            characterBuilder.OpenNewBuilder();
         }
 
         // ====== IMGUI RENDER ======
