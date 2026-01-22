@@ -27,7 +27,7 @@ void CampaignManager::render() {
     }
     ImGui::SameLine();
     if (ImGui::Button("New Character")) {
-        characters.push_back(Character("NewHero", CharacterRace(), CharacterClass(), 1));
+        characters.push_back(Character("NewHero", CharacterRace(), CharacterClass()));
         selectedIndex = static_cast<int>(characters.size()) - 1;
     }
 

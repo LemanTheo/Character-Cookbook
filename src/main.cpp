@@ -7,6 +7,7 @@
 #include <vector>
 #include <string>
 #include <iostream>
+#include <math.h>
 
 // Import Créateur persos
 #include "json_utils.h"
@@ -111,6 +112,8 @@ int main() {
     char newName[128] = "";
     char newRace[128] = "";
     char newClass[128] = "";
+    
+    int strStat, conStat, dexStat, intStat, wisStat, chaStat = 10;
 
     bool showCampaignWindow = true;
 
@@ -159,6 +162,9 @@ int main() {
         if (showCampaignWindow) {
             ImGui::Begin("Campaign Manager");
 
+            Character currentCharacter = Character();
+            CharacterStat CurrentStats[6];
+
             ImGui::Text("Characters in your campaign:");
             for (size_t i = 0; i < characters.size(); ++i) {
                 ImGui::BulletText("%s (%s %s)",
@@ -184,6 +190,33 @@ int main() {
                 string fileName = "data/characters";
                 json_utils::save_character(characters.back(),fileName);
                 newName[0] = newRace[0] = newClass[0] = '\0';
+            }
+            if(ImGui::BeginTable("statBlock", 6))
+            {
+                if(ImGui::InputInt("Strength Stat", &strStat))
+                {
+                    std::cout << "test" << endl;
+                }
+                ImGui::NextColumn();
+                ImGui::InputInt("Constitution Stat", &conStat);
+                ImGui::NextColumn();
+                ImGui::InputInt("Dexterity Stat", &dexStat);
+                ImGui::EndTable();
+            }
+            ImGui::InputInt("Intelligence Stat", &intStat);
+            ImGui::SameLine();
+            ImGui::InputInt("Wisdom Stat", &wisStat);
+            ImGui::SameLine();
+            ImGui::InputInt("Charisma Stat", &chaStat);
+
+            if (ImGui::Button("Roll Stats")) 
+            {
+                strStat = rand() % 20;
+                conStat = rand() % 20;
+                dexStat = rand() % 20;
+                intStat = rand() % 20;
+                wisStat = rand() % 20;
+                chaStat = rand() % 20;
             }
 
             ImGui::End();
