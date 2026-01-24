@@ -1,7 +1,8 @@
 #pragma once
 #include <string>
-#include <array>
+#include <iostream>
 #include <nlohmann/json.hpp>
+#include <array>
 
 #include "characterClass.h"
 #include "characterRace.h"
@@ -12,7 +13,12 @@ private:
     std::string Name;
     CharacterRace characterRace;
     CharacterClass characterClass;
-    array<CharacterStat, 6> Stats;
+    CharacterStat STRStat;
+    CharacterStat CONStat;
+    CharacterStat DEXStat;
+    CharacterStat INTStat;
+    CharacterStat WISStat;
+    CharacterStat CHAStat;
     int level;
 
 public:
@@ -26,4 +32,9 @@ public:
     CharacterRace getRace();
     CharacterClass getClass();
     int getLevel();
+
+    int setStat(StatCodes code, int val);
+    int setStat(StatCodes code, CharacterStat stat);
+    void setStats(array<CharacterStat, 6> stats);
+    array<CharacterStat, 6> getStats();
 };

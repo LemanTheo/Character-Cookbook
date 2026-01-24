@@ -1,54 +1,35 @@
 #include "characterStat.h"
 
+using namespace std;
+
 CharacterStat::CharacterStat()
 {
-    statName = STRENGTH;
-    statCode = STR;
     initialValue = 10;
 }
 
-CharacterStat::CharacterStat(StatCodes code, int val)
+CharacterStat::CharacterStat(int val)
 {
-    statCode = code;
-    statName = GetNameFromCode(code);
     initialValue = val;
 }
 
-StatNames GetNameFromCode(StatCodes code)
-{
-    switch(code)
-    {
-        default:
-        case 1:
-            return STRENGTH;
-        case 2:
-            return CONSTITUTION;
-        case 3:
-            return DEXTERITY;
-        case 4:
-            return INTELLIGENCE;
-        case 5:
-            return WISDOM;
-        case 6:
-            return CHARISMA;
-    }
-}
-
-void CharacterStat::SetInitialValue(int val)
+void CharacterStat::setInitialValue(int val)
 { initialValue = val; }
 
-int CharacterStat::GetValue()
+int CharacterStat::getValue()
 {
     int realValue = initialValue;
 
     // we will include here a list of the different stuff such as class/race bonus, potion effects, debuffs, armors, etc
 
+    // cout << GetNameFromCode(statCode) << " |-> " << initialValue << endl;
     return realValue;
 }
 
-int CharacterStat::GetModifier()
+int CharacterStat::getModifier()
 {
-    int modifier = (GetValue() / 2) - 5;
+    int modifier = (getValue() / 2) - 5;
 
     //Same here, waiting to add more stuff before doing anything
+
+    return modifier;
 }

@@ -113,7 +113,7 @@ int main() {
     char newRace[128] = "";
     char newClass[128] = "";
     
-    int strStat, conStat, dexStat, intStat, wisStat, chaStat = 10;
+    int strStat = 10, conStat = 10, dexStat = 10, intStat = 10, wisStat = 10, chaStat = 10;
 
     bool showCampaignWindow = true;
 
@@ -163,7 +163,6 @@ int main() {
             ImGui::Begin("Campaign Manager");
 
             Character currentCharacter = Character();
-            CharacterStat CurrentStats[6];
 
             ImGui::Text("Characters in your campaign:");
             for (size_t i = 0; i < characters.size(); ++i) {
@@ -179,35 +178,40 @@ int main() {
             ImGui::InputText("Race", newRace, 128);
             ImGui::InputText("Class", newClass, 128);
 
-            if (ImGui::Button("Add Character")) {
-                characters.emplace_back(
-                    newName,
-                    CharacterRace(),
-                    CharacterClass(),
-                    1 // starting level
-                );
-
-                string fileName = "data/characters";
-                json_utils::save_character(characters.back(),fileName);
-                newName[0] = newRace[0] = newClass[0] = '\0';
+            if (ImGui::Button("Change Info")) {
+                currentCharacter = Character(newName, CharacterRace(), CharacterClass());
             }
-            if(ImGui::BeginTable("statBlock", 6))
+            if(ImGui::InputInt("Strength Stat", &strStat))
             {
-                if(ImGui::InputInt("Strength Stat", &strStat))
-                {
-                    std::cout << "test" << endl;
-                }
-                ImGui::NextColumn();
-                ImGui::InputInt("Constitution Stat", &conStat);
-                ImGui::NextColumn();
-                ImGui::InputInt("Dexterity Stat", &dexStat);
-                ImGui::EndTable();
+                // std::cout << "changing STR" << endl;
+                currentCharacter.setStat(StatCodes::STR, strStat);
             }
-            ImGui::InputInt("Intelligence Stat", &intStat);
-            ImGui::SameLine();
-            ImGui::InputInt("Wisdom Stat", &wisStat);
-            ImGui::SameLine();
-            ImGui::InputInt("Charisma Stat", &chaStat);
+            if(ImGui::InputInt("Constitution Stat", &conStat))
+            {
+                // std::cout << "changing CON" << endl;
+                currentCharacter.setStat(StatCodes::CON, conStat);
+            }
+            if(ImGui::InputInt("Dexterity Stat", &dexStat))
+            {
+                // std::cout << "changing DEX" << endl;
+                currentCharacter.setStat(StatCodes::DEX, dexStat);
+                // currentCharacter.getStats()[2].setInitialValue(dexStat);
+            }
+            if(ImGui::InputInt("Intelligence Stat", &intStat))
+            {
+                // std::cout << "changing INT" << endl;
+                currentCharacter.setStat(StatCodes::INT, intStat);
+            }
+            if(ImGui::InputInt("Wisdom Stat", &wisStat))
+            {
+                // std::cout << "changing WIS" << endl;
+                currentCharacter.setStat(StatCodes::WIS, wisStat);
+            }
+            if(ImGui::InputInt("Charisma Stat", &chaStat))
+            {
+                // std::cout << "changing CHA" << endl;
+                currentCharacter.setStat(StatCodes::CHA, strStat);
+            }
 
             if (ImGui::Button("Roll Stats")) 
             {
@@ -217,8 +221,26 @@ int main() {
                 intStat = rand() % 20;
                 wisStat = rand() % 20;
                 chaStat = rand() % 20;
+                array<CharacterStat, 6> stats = {
+                    CharacterStat(strStat),
+                    CharacterStat(conStat),
+                    CharacterStat(dexStat),
+                    CharacterStat(intStat),
+                    CharacterStat(wisStat),
+                    CharacterStat(chaStat)
+                };
+                currentCharacter.setStats(stats);
             }
-
+            if(ImGui::Button("Show Stats"))
+            {
+                array<CharacterStat, 6> stats;
+                stats = currentCharacter.getStats();
+                std::cout << "name: " << currentCharacter.getName() << endl;
+                std::cout << "size of Stats: " << stats.size() << endl;
+                for(int i = 0; i < stats.size(); i++)
+                    std::cout <<  stats.at(i).getValue() << endl;
+                std::cout << endl;
+            }
             ImGui::End();
         }
 
