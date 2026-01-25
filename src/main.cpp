@@ -108,6 +108,8 @@ int main() {
 
     characters = json_utils::load_all_characters("../data/characters");
 
+    
+    Character currentCharacter;
 
     char newName[128] = "";
     char newRace[128] = "";
@@ -162,7 +164,6 @@ int main() {
         if (showCampaignWindow) {
             ImGui::Begin("Campaign Manager");
 
-            Character currentCharacter = Character();
 
             ImGui::Text("Characters in your campaign:");
             for (size_t i = 0; i < characters.size(); ++i) {
