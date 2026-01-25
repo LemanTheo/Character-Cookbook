@@ -1,6 +1,7 @@
 #include "gl_buttons.h"
+#include <GL/gl.h>
 #include <GLFW/glfw3.h>
-#include <GL/gl.h> // for OpenGL functions
+#include "imgui.h"
 
 void DrawGLButton(const GLButton& btn) {
     int display_w, display_h;
@@ -13,8 +14,15 @@ void DrawGLButton(const GLButton& btn) {
     glMatrixMode(GL_MODELVIEW);
     glLoadIdentity();
 
-    // Hover color
-    glColor3f(btn.hovered ? 0.85f : 0.65f, btn.hovered ? 0.30f : 0.25f, 0.25f);
+    bool mouseDown =
+        glfwGetMouseButton(glfwGetCurrentContext(), GLFW_MOUSE_BUTTON_LEFT) == GLFW_PRESS;
+
+    if (btn.hovered && mouseDown)
+        glColor3f(btn.clickColor[0], btn.clickColor[1], btn.clickColor[2]);
+    else if (btn.hovered)
+        glColor3f(btn.hoverColor[0], btn.hoverColor[1], btn.hoverColor[2]);
+    else
+        glColor3f(btn.baseColor[0], btn.baseColor[1], btn.baseColor[2]);
 
     glBegin(GL_QUADS);
     glVertex2f(btn.x, btn.y);
@@ -22,28 +30,31 @@ void DrawGLButton(const GLButton& btn) {
     glVertex2f(btn.x + btn.w, btn.y + btn.h);
     glVertex2f(btn.x, btn.y + btn.h);
     glEnd();
+
+    // ---- TEXT (ImGui) ----
+    ImDrawList* draw_list = ImGui::GetForegroundDrawList();
+    ImVec2 textSize = ImGui::CalcTextSize(btn.label);
+    ImVec2 textPos(
+        btn.x + (btn.w - textSize.x) * 0.5f,
+        btn.y + (btn.h - textSize.y) * 0.5f
+    );
+
+    draw_list->AddText(textPos, IM_COL32(255, 255, 255, 255), btn.label);
 }
 
 bool HandleGLButton(GLButton& btn) {
-    // Get mouse position
     double mx, my;
     GLFWwindow* window = glfwGetCurrentContext();
     glfwGetCursorPos(window, &mx, &my);
 
-    // Check hover
     btn.hovered =
-        mx >= btn.x &&
-        mx <= btn.x + btn.w &&
-        my >= btn.y &&
-        my <= btn.y + btn.h;
+        mx >= btn.x && mx <= btn.x + btn.w &&
+        my >= btn.y && my <= btn.y + btn.h;
 
-    // Mouse button
-    bool mouseDown = glfwGetMouseButton(window, GLFW_MOUSE_BUTTON_LEFT) == GLFW_PRESS;
+    bool mouseDown =
+        glfwGetMouseButton(window, GLFW_MOUSE_BUTTON_LEFT) == GLFW_PRESS;
 
-    // Detect click (press edge)
     bool clicked = btn.hovered && mouseDown && !btn.prevMouseDown;
-
-    // Update state
     btn.prevMouseDown = mouseDown;
 
     return clicked;

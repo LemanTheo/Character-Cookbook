@@ -16,5 +16,6 @@ Et commit les modules mis à jour :
 ```sh
 git add extern/
 git commit -m "Update submodules"
+git submodule update --init --recursive
 ```
 
