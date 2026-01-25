@@ -2,6 +2,7 @@
 
 #include <iostream>
 #include <string>
+#include <vector>
 
 using namespace std;
 
@@ -11,6 +12,8 @@ class CharacterStat
 {
     private:
         int initialValue;
+        vector<int> valueBuffs;
+        vector<int> modifierBuffs;
 
     public:
         CharacterStat();
@@ -19,4 +22,6 @@ class CharacterStat
         void setInitialValue(int val);
         int getValue();
         int getModifier();
+        void addValueBuff(int buff);
+        void addModBuff(int buff);
 };

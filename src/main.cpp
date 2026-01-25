@@ -234,14 +234,31 @@ int main() {
             }
             if(ImGui::Button("Show Stats"))
             {
-                array<CharacterStat, 6> stats;
-                stats = currentCharacter.getStats();
+                array<CharacterStat, 6> stats = {currentCharacter.getStat(StatCodes::STR), currentCharacter.getStat(StatCodes::CON), currentCharacter.getStat(StatCodes::DEX), currentCharacter.getStat(StatCodes::INT), currentCharacter.getStat(StatCodes::WIS), currentCharacter.getStat(StatCodes::CHA)};
                 std::cout << "name: " << currentCharacter.getName() << endl;
-                std::cout << "size of Stats: " << stats.size() << endl;
                 for(int i = 0; i < stats.size(); i++)
                     std::cout <<  stats.at(i).getValue() << endl;
                 std::cout << endl;
             }
+
+            int buff;
+            ImGui::InputInt("Buff", &buff);
+            if(ImGui::Button("Buff STR Value"));
+            {
+                currentCharacter.getStat(StatCodes::STR).addValueBuff(buff);
+            }
+            if(ImGui::Button("Buff STR Mod"));
+            {
+                currentCharacter.getStat(StatCodes::STR).addModBuff(buff);
+                std::cout << "STR mod: " << currentCharacter.getStat(StatCodes::STR).getModifier() << endl;
+            }
+
+            if(ImGui::Button("Buff Athletics Mod"));
+            {
+                currentCharacter.getSkill(SkillCodes::ATHLETICS).addModBuff(buff);
+                std::cout << "STR mod: " << currentCharacter.getSkill(SkillCodes::ATHLETICS).getModifier() << endl;
+            }
+
             ImGui::End();
         }
 
