@@ -2,13 +2,13 @@
 #include <fstream>
 #include <nlohmann/json.hpp>
 
-#include "character.h"
+#include "Character_Management/character.h"
 #include <filesystem>
 
 namespace json_utils {
 
 void save_character(const Character& c, const std::string& folder) {
-    std::string filename = folder + "/" + c.name + ".json";
+    std::string filename = folder + "/" + c.getName() + ".json";
 
     std::ofstream file(filename);
     if (!file.is_open())
@@ -25,7 +25,7 @@ Character load_character(const std::string& path) {
 
     nlohmann::json j;
     file >> j;
-    return Character::from_json(j);
+    return Character(j);
 }
 
 
@@ -43,7 +43,7 @@ std::vector<Character> load_all_characters(const std::string& folder) {
 
         nlohmann::json j;
         file >> j;
-        result.push_back(Character::from_json(j));
+        result.push_back(Character(j));
     }
 
     return result;

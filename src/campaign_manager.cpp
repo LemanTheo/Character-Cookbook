@@ -27,7 +27,7 @@ void CampaignManager::render() {
     }
     ImGui::SameLine();
     if (ImGui::Button("New Character")) {
-        characters.push_back(Character("NewHero", "Human", "Fighter", 1));
+        characters.push_back(Character("NewHero", CharacterRace(), CharacterClass()));
         selectedIndex = static_cast<int>(characters.size()) - 1;
     }
 
@@ -38,7 +38,7 @@ void CampaignManager::render() {
     } else {
         for (int i = 0; i < static_cast<int>(characters.size()); ++i) {
             const bool isSelected = (i == selectedIndex);
-            if (ImGui::Selectable(characters[i].name.c_str(), isSelected)) {
+            if (ImGui::Selectable(characters[i].getName().c_str(), isSelected)) {
                 selectedIndex = i;
             }
         }

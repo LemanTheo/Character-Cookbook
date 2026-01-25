@@ -7,7 +7,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 # ------------------------------
 # Source files
 # ------------------------------
-file(GLOB SRC_FILES src/*.cpp)
+file(GLOB SRC_FILES src/*.cpp src/*/*.cpp)
 
 # Dear ImGui sources (core + backends)
 set(IMGUI_SRC
