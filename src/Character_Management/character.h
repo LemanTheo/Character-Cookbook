@@ -51,9 +51,9 @@ public:
 
     nlohmann::json to_json() const;
     std::string getName() const;
-    CharacterRace getRace();
-    CharacterClass getClass();
-    int getLevel();
+    CharacterRace getRace() const;
+    CharacterClass getClass() const;
+    int getLevel() const;
 
     CharacterStat getStat(StatCodes code);
     CharacterSkill getSkill(SkillCodes code);

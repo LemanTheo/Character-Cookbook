@@ -243,20 +243,20 @@ int main() {
 
             int buff;
             ImGui::InputInt("Buff", &buff);
-            if(ImGui::Button("Buff STR Value"));
+            if(ImGui::Button("Buff STR Value"))
             {
                 currentCharacter.getStat(StatCodes::STR).addValueBuff(buff);
             }
-            if(ImGui::Button("Buff STR Mod"));
+            if(ImGui::Button("Buff STR Mod"))
             {
                 currentCharacter.getStat(StatCodes::STR).addModBuff(buff);
                 std::cout << "STR mod: " << currentCharacter.getStat(StatCodes::STR).getModifier() << endl;
             }
 
-            if(ImGui::Button("Buff Athletics Mod"));
+            if(ImGui::Button("Buff Athletics Mod"))
             {
                 currentCharacter.getSkill(SkillCodes::ATHLETICS).addModBuff(buff);
-                std::cout << "STR mod: " << currentCharacter.getSkill(SkillCodes::ATHLETICS).getModifier() << endl;
+                std::cout << "ATH mod: " << currentCharacter.getSkill(SkillCodes::ATHLETICS).getModifier() << endl;
             }
 
             ImGui::End();

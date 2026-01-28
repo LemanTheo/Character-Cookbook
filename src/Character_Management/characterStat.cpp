@@ -10,8 +10,6 @@ CharacterStat::CharacterStat()
 CharacterStat::CharacterStat(int val)
 {
     initialValue = val;
-    valueBuffs = {};
-    modifierBuffs = {};
 }
 
 void CharacterStat::setInitialValue(int val)
@@ -37,8 +35,14 @@ int CharacterStat::getModifier()
     return modifier;
 }
 
+// Does not work yet, need to work some kinks
 void CharacterStat::addValueBuff(int buff)
-{ valueBuffs.push_back(buff); }
+{
+    cout << valueBuffs.size() << " ";
+    valueBuffs.push_back(buff);
+    cout << valueBuffs.size() << " ";
+    cout << endl;
+}
 
 void CharacterStat::addModBuff(int buff)
 { modifierBuffs.push_back(buff); }

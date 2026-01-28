@@ -14,7 +14,7 @@ class CharacterSkill: public CharacterStat
     public:
         using CharacterStat::getModifier;
         CharacterSkill();
-        CharacterSkill(CharacterStat *baseStat);
+        CharacterSkill(CharacterStat* baseStatPtr);
         int getModifier();
         void addValueBuff(int buff);
 };

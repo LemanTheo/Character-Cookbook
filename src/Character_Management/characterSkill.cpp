@@ -9,10 +9,10 @@ CharacterSkill::CharacterSkill()
     modifierBuffs = {};
 }
 
-CharacterSkill::CharacterSkill(CharacterStat *baseStat)
+CharacterSkill::CharacterSkill(CharacterStat* baseStatPtr)
 {
     CharacterStat();
-    *BaseStat = *baseStat;
+    BaseStat = baseStatPtr;
     modifierBuffs = {};
 }
 

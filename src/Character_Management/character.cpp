@@ -152,13 +152,13 @@ nlohmann::json Character::to_json() const {
 string Character::getName() const
 { return Name; }
 
-CharacterRace Character::getRace()
+CharacterRace Character::getRace() const
 { return characterRace; }
 
-CharacterClass Character::getClass()
+CharacterClass Character::getClass() const
 { return characterClass; }
 
-int Character::getLevel()
+int Character::getLevel() const
 { return level; }
 
 int Character::setStat(StatCodes code, int val)
