@@ -19,9 +19,9 @@ int CharacterStat::getValue()
 {
     int realValue = initialValue;
 
-    // we will include here a list of the different stuff such as class/race bonus, potion effects, debuffs, armors, etc
+    for(int i = 0; i < valueBuffs.size(); i++)
+        realValue += valueBuffs[i];
 
-    // cout << GetNameFromCode(statCode) << " |-> " << initialValue << endl;
     return realValue;
 }
 
@@ -29,7 +29,20 @@ int CharacterStat::getModifier()
 {
     int modifier = (getValue() / 2) - 5;
 
-    //Same here, waiting to add more stuff before doing anything
+    for(int i = 0; i < modifierBuffs.size(); i++)
+        modifier += modifierBuffs[i];
 
     return modifier;
 }
+
+// Does not work yet, need to work some kinks
+void CharacterStat::addValueBuff(int buff)
+{
+    cout << valueBuffs.size() << " ";
+    valueBuffs.push_back(buff);
+    cout << valueBuffs.size() << " ";
+    cout << endl;
+}
+
+void CharacterStat::addModBuff(int buff)
+{ modifierBuffs.push_back(buff); }
